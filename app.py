@@ -18,7 +18,7 @@ class RandomUa(Resource):
         ua=useragent.random
         #return ua
         return ({
-            "user-agent": ua,
+            "user-agent": f"{ua}",
             "response code": 200,
             "creator": "Ammar-Excuted"
         })
