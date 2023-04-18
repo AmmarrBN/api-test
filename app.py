@@ -6,6 +6,12 @@ from flask_cors import CORS
 from fake_useragent import UserAgent
 import os,requests,json,random,string,time
 
+app=Flask(__name__)
+api=Api(app)
+
+CORS(app)
+
+
 class RandomUa(Resource):
     def get(self):
         useragent=UserAgent()
