@@ -14,9 +14,6 @@ CORS(app)
 
 class RandomUa(Resource):
     def get(self):
-        useragent=UserAgent()
-        ua=useragent.random
-        #return ua
         return ({
             "user-agent": "ua",
             "response code": 200,
